@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="photo/icon.png" type="image/x-icon">
+    <title>Document</title>
+</head>
+<body>
+    <header class="text-7xl font-bold w-9/12 text-center mx-auto mt-5"> <span class="text-orange-500">BMI</span> CALCULETOR
+    </header>
+    <main>
+        <div class="ml-[72px] mt-5 mb-3 md:ml-[535px] md:mt-5">
+            <div class="card w-96 bg-base-100 shadow-2xl">
+                <figure><img src="photo/BMI-Meter.png" alt="BMI" /></figure>
+                <div class="card-body">
+                  <h2 class="card-title text-xl">BMI</h2>
+                  <p>BMI = kg/m<sup>2</sup></p>
+                  <p>
+                    <input id="weightArea" type="text" placeholder="Weight" class="px-3 w-28 shadow-inner border-t-2"><span> kg</span>
+                    <input id="heightArea" type="text" placeholder="Height" class="px-3 w-28 shadow-inner border-t-2 ml-3"><span> Meter</span>
+                  </p>
+                  <p class="text-xl pt-2">Calulet Value: <span id="Calulet-value">0</span></p>
+                  <p id="factElement" class="text-xl font-medium"></p>
+                  <div class="card-actions justify-end mt-3">
+                    <button id="convertButton" class="btn btn-primary w-full">Convert</button>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </main>
+    <script src="JS/bmi.js"></script>
+</body>
+</html>
